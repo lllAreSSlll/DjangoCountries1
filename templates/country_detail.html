@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ country_data.country }}</title>
+</head>
+<body>
+{% include 'menu.html' %}
+  <h1>{{ country_data.country }}</h1>
+  <ul>
+    {% for language in country_data.languages %}
+    <li>{{ language }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
